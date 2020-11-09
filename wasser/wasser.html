@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Jmol, see http://www.jmol.org">
+  <meta name="author" content="Johannes Frey">
+  <meta name="keywords" content="generated_by_Jmol_Webexport">
+  <title>Wasser</title>
+  <style type="text/css">
+	h1 { font-size:1.5em; text-align:center; }
+	.section { clear:both; padding:0.6em 0; }
+	.sceneWrapper {
+		border:1px solid gray;
+		border-radius:1ex;
+		margin:0.3em 1ex; 
+		font-size:0.9em; 
+	}
+	.sceneWrapper td {
+		padding:0.5ex;
+	}
+  .JmolDiv { 
+		padding:0.3em 0.5ex; 
+		font-size:0.9em; 
+		background-repeat:no-repeat; 
+		background-position:center;
+  }
+  .floatRight { float:right; }
+  .floatLeft { float:left; }
+  .update-info {
+		clear:both;
+		padding-top:1em;
+		text-align:right;
+		font-size:0.75em;
+		font-style:italic;
+  }
+	.update-info + .update-info {
+		padding-top:0.2em;
+		margin-bottom:1em;
+	}
+	.widgetItemPopin { /* each widget in a PopIn page goes in a div with this class */
+		 margin:0.2em 0;
+	}
+  </style>  
+
+  <!-- Below is used locally but not on server. May generate warnings. -->
+  <script type="text/javascript" src="http://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js"></script>
+  <script src="support.js" type="text/javascript"></script>
+  
+<script src="JmolAnimationCntrl.js" type="text/javascript"></script>
+  
+  <!-- Below is used on server, but not locally. May generate warnings.-->
+  <script type="text/javascript" src="http://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js"></script>
+  <script type="text/javascript">
+  var jmolApplet; //our viewer
+  var jmolInfo; //setup parameters
+  ;(function() {
+
+// Developers: The debugCode flag is checked in j2s/java/core.z.js, 
+// and, if TRUE, skips loading the core methods, forcing those
+// to be read from their individual directories. Set this
+// true if you want to do some code debugging by inserting
+// System.out.println, document.title, or alert commands
+// anywhere in the Java or Jmol code.
+
+var s = document.location.search;
+Jmol.debugCode = (s.indexOf("debugcode") >= 0);
+
+jmol_isReady = function(jmolApplet) {
+}		
+
+jmolInfo = { //default values
+	width: "100%",
+	height: "100%",
+	debug: false,
+	color: "white",
+	addSelectionOptions: false,
+	use: "HTML5",
+	coverImage: "@APPLETNAME0@.png",        // initial image instead of applet
+	coverScript: "",	// special script for click of cover image (otherwise equal to script)
+	deferApplet: true,                  // wait to load applet until click
+	deferUncover: true,                 // wait to uncover applet until script completed
+		//The paths below assume your server is set up with standard JSmol directory.  If not
+		//they will need modification for the page to work.
+	jarPath: "http://chemapps.stolaf.edu/jmol/jsmol/java", //path to applet .jar files on server.
+	j2sPath: "http://chemapps.stolaf.edu/jmol/jsmol/j2s",//path to javascript version.
+	serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php", //if your own server does not allow php, you can change to http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php
+	makeLiveImg:"http://chemapps.stolaf.edu/jmol/jsmol/j2s/img/play_make_live.jpg",//path to activate 3-D image.
+	jarFile: "JmolAppletSigned0.jar",
+	isSigned: true,
+	//disableJ2SLoadMonitor: true,
+	disableInitialConsole: true,
+	readyFunction: jmol_isReady,
+	script: ""
+}
+
+// ?_USE=JAVA   ?_USE=SIGNED   ?_USE=HTML5
+   if (s.indexOf("USE=") >= 0)
+     jmolInfo.use = s.split("USE=")[1].split("&")[0]
+   else if (s.indexOf("JAVA") >= 0)
+     jmolInfo.use = "JAVA"
+   else if (s.indexOf("IMAGE") >= 0)
+     jmolInfo.use = "IMAGE"
+   else if (s.indexOf("NOWEBGL") >= 0)
+     jmolInfo.use = "JAVA IMAGE"
+   else if (s.indexOf("WEBGL") >= 0)
+     jmolInfo.use = "WEBGL HTML5"
+   if (s.indexOf("NOWEBGL") >= 0)
+     jmolInfo.use = use.replace(/WEBGL/,"")
+   var useSignedApplet = (s.indexOf("SIGNED") >= 0);
+   if(useSignedApplet && jmolInfo.use == "HTML5") jmolInfo.use = "JAVA";
+
+   var protocol = window.location.protocol.toLowerCase();
+   if (protocol == "file:") { 
+    jmolInfo.jarPath = "http://chemapps.stolaf.edu/jmol/jsmol/java";
+    jmolInfo.j2sPath = "http://chemapps.stolaf.edu/jmol/jsmol/j2s";
+    jmolInfo.serverURL = "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php"; //you can change to your own path
+    jmolInfo.makeLiveImg = "http://chemapps.stolaf.edu/jmol/jsmol/j2s/img/play_make_live.jpg";
+    jmolInfo.jarFile = "JmolAppletSigned.jar";
+    jmolInfo.isSigned= "true";
+  }
+})();
+
+$(document).ready(function(){//set up each of the applet locations
+	   var jmolInfo0=jmolInfo;
+   jmolInfo0.coverImage="Wasser.png";
+   jmolInfo0.coverScript="javascript revealPopinWidgets(0);";
+   jmolInfo0.script="load Wasser.spt";
+   $("#Jmol0").html(Jmol.getAppletHtml("jmolApplet0",jmolInfo0));
+
+});
+  </script>
+</head>
+<body>
+    <div id="introdiv">
+      <h1 id="titlediv">
+        Geben sie hier den TITEL der Seite ein.
+      </h1>
+      Geben sie die hier die Einleitung der Seite ein.
+    </div>
+
+    
+
+    <div id="section_Wasser" class="section">
+	<table id="scene_Wasser" class="sceneWrapper floatRight" style="width:300px;">
+		<tr>
+			<td id="leftJmolCntl0" style="visibility:hidden"></td>
+			<td style="width:300px;">
+			<div id="Jmol0" class="JmolDiv" style="width:300px; height:300px; background-image:url(Wasser.png)">
+				Jmol0 will appear here.
+			</div>
+			</td>
+			<td id="rightJmolCntl0" style="visibility:hidden"><div id="JmolCntl0">
+<div class="widgetItemPopin"><div class="AnimBox"><div style="text-align:center">Animation</div><div><button title="Erstes Bild" onclick="void(Jmol.scriptWait(window['jmolApplet0'], 'frame rewind'));"><img src="firstButton.png"></button><button title="Vorheriges Bild" onclick="void(Jmol.scriptWait(window['jmolApplet0'], 'frame previous'));"><img src="prevButton.png"></button><button title="Wiedergabe" onclick="void(Jmol.scriptWait(window['jmolApplet0'], 'frame play'));"><img src="playButton.png"></button><button title="N&#228;chstes Bild" onclick="void(Jmol.scriptWait(window['jmolApplet0'], 'frame next'));"><img src="nextButton.png"></button><button title="Pause" onclick="void(Jmol.scriptWait(window['jmolApplet0'], 'frame pause'));"><img src="pauseButton.png"></button><button title="Letztes Bild" onclick="void(Jmol.scriptWait(window['jmolApplet0'], 'frame last'));"><img src="lastButton.png"></button></div><div><span>Modus:</span><span id="jmol_loop_0"><button title="Schleife" onclick="jmol_animationmode('loop',0);"><img src="playLoopButton.png"></button></span><span id="jmol_palindrome_0"><button title="Palindrom" onclick="jmol_animationmode('palindrome', 0);"><img src="playPalindromeButton.png"></button></span><span class="jmol_playDefault" id="jmol_playOnce_0"><button title="Einmal abspielen" onclick="jmol_animationmode('playOnce', 0);"><img src="playOnceButton.png"></button></span></div></div></div>
+</div></td>
+		</tr>
+		<tr>
+			<td colspan="3">     
+				Geben sie die Bildunterschrift f&#252;r &#x201C;Wasser&#x201D; hier ein.		
+			</td>
+		</tr>
+	</table>
+	<div id="text_Wasser">
+		F&#252;gen Sie zus&#228;tzlichen erkl&#228;renden Text hier ein. L&#228;ngerer Text wird das Jmol Modell &#x201C;Wasser&#x201D; umflie&#223;en.
+	</div>
+</div>
+
+
+
+    <div id="creationdiv" class="update-info">
+      Seiten-Ger&#252;st und JavaScript wurden generiert mit der Webseiten-Export Funktion von  <a href="http://jmol.sourceforge.net">Jmol 14.31.14  2020-10-29 23:43</a>  am 09.11.2020.
+    </div>
+    <div id="authordiv" class="update-info">
+      Basiert auf einer Vorlage von A. Herr&#x00E1;ez und J. Gutow.
+    </div>
+    <div id="logdiv" style="display:none">
+      <pre>
+Verwende Verzeichnis /Users/johannesfrey/Documents/wasser
+  support.js hinzufügen
+  ...jmolApplet0
+      ...Wasser.png hinzufügen
+      ...Wasser.spt hinzufügen
+  JmolAnimationCntrl.js hinzufügen
+  lastButton.png hinzufügen
+  playButton.png hinzufügen
+  playLoopButton.png hinzufügen
+  playOnceButton.png hinzufügen
+  playPalindromeButton.png hinzufügen
+  prevButton.png hinzufügen
+  pauseButton.png hinzufügen
+  nextButton.png hinzufügen
+  firstButton.png hinzufügen
+
+</pre>
+
+    </div>
+</body>
+</html>
