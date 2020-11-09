@@ -1,0 +1,4 @@
+In Beirut lagerten am 4. August 2020 2750 Tonnen Ammoniumnitrat. Angenommen, die gesamte Menge explodierte auf einmal, welches Volumen an Gas hat sich gebildet? (Gehen Sie von Normalbedingungen aus)
+NH4NO3 --> H2O + N2 + O2
+(Reaktionsgleichung muss ausgeglichen werden)
+In Normalbedingungen nimmt ein Mol ideales Gas 22.41 L Volumen ein.
